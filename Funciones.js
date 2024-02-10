@@ -1,3 +1,4 @@
+//Esta función muestra o deja de mostrar el menú de opciones de la cuenta, cambiándole la clase
 function openAccountPages() {
     let div = document.getElementById("opcionesCuenta");
     if(div.className == ""){
@@ -9,24 +10,17 @@ function openAccountPages() {
     return false;
 }
 
+//Esta función comprueba el modo en el que está, y dependiendo del modo en el que se encuentre cambia el archivo al de modo oscuro o modo claro
 let isDarkMode = false;
 function changePaletteTheme() {
     if(!isDarkMode){
         document.getElementById("cssCabecera").href = "./style/CabeceraYPieModoOscuro.css";
-    }else{
-        document.getElementById("cssCabecera").href = "./style/CabeceraYPie.css"
-    }
-
-    if(!isDarkMode){
         document.getElementById("cssMain").href = "./style/indexModoOscuro.css";
-    }else{
-        document.getElementById("cssMain").href = "./style/index.css"
-    }
-
-    if(!isDarkMode){
         document.getElementById("imgLogo").src = "./img/LogoDarkMode2.png";
         isDarkMode = true;
     }else{
+        document.getElementById("cssCabecera").href = "./style/CabeceraYPie.css"
+        document.getElementById("cssMain").href = "./style/index.css"
         document.getElementById("imgLogo").src = "./img/SkyPhonesLogo.png"
         isDarkMode = false;
     }
