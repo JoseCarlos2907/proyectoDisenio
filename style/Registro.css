@@ -1,0 +1,137 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+main section h1{
+    text-align: center;
+    font-size: 48.8px;
+    color: #485862;
+}
+
+.botonCorreo, .botonFB{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
+    align-items: center;
+    border: 0;
+    border-radius: 15px;
+    padding: 3%;
+    margin-top: 10%;
+    width: 70%;
+}
+
+.botonCorreo{
+    background-color: #F48181;
+}
+
+.botonFB{
+    background-color: #0082CC;
+    color: white;
+}
+
+.botonCorreo img, .botonFB img{
+    margin-left: 5%;
+    margin-right: 6%;
+}
+
+#formRegistro ::placeholder{
+    color: #485862;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#formRegistro input{
+    height: 40px;
+    width: 90%;
+    background-color: #DCDDDE;
+    border: 0;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#formRegistro input:last-child{
+    height: fit-content;
+    width: 70%;
+    background-color: #FF9900;
+    font-weight: bold;
+    border: 0;
+    font-size: 22px;
+    margin-bottom: 10%;
+}
+
+
+@media (max-width: 1555px) {
+    .botonCorreo, .botonFB{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .botonCorreo, .botonFB{
+        font-size: 14px;
+    }
+
+    .botonCorreo img, .botonFB img{
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media (max-width: 1140px) {
+    main section h1{
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 920px) {
+    .botonCorreo, .botonFB{
+        font-size: 10px;
+    }
+
+    .botonCorreo img, .botonFB img{
+        height: 12px;
+        width: 12px;
+    }
+}
+
+@media (max-width: 845px) {
+    main section h1{
+        font-size: 24px;
+    }
+    
+    #formRegistro input:last-child, #formRegistro input, #formRegistro input::placeholder{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 625px) {
+    .botonCorreo, .botonFB{
+        font-size: 5px;
+    }
+    
+    #formRegistro input:last-child, #formRegistro input, #formRegistro input::placeholder{
+        font-size: 8px;
+    }
+
+    #formRegistro input{
+        height: 20px;
+    }
+}
+
+@media (max-width: 565px) {
+    main section h1{
+        font-size: 16px;
+    }
+}

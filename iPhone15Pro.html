@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Producto</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="style/CabeceraYPie.css">
+        <link rel="stylesheet" href="style/Producto.css">
+        <script src="Funciones.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="divLogo">
+                <a href="index.html"><img id="imgLogo" src="img/SkyPhonesLogo.png" alt="Logo SkyPhones"> <!--Logo--></a>
+            </div>
+
+            <div id="opcionesMenu">
+                <a href="Dispositivos.html">
+                    <div>
+                        <p>Dispositivos</p>
+                    </div>
+                </a>
+                
+                <a href="Accesorios.html">
+                    <div>
+                        <p>Accesorios</p>
+                    </div>
+                </a>
+
+                <a href="Reparaciones.html">
+                    <div>
+                        <p>Reparaciones</p>
+                    </div>
+                </a>
+
+                <a href="Soporte.html">
+                    <div>
+                        <p>Soporte</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div id="barraBusqueda">
+                <div>
+                    <input type="text" placeholder="Búsqueda">
+                    <img src="img/IconoLupa.png" alt="Icono Lupa"> <!--Icono Lupa-->
+                </div>
+            </div>
+
+
+            <div id="opcionesNaranjas">
+                <div>
+                    <a href="Carrito.html">
+                        <img src="img/IconoCarrito36px.png" alt="Icono Carrito"> <!--Icono Carrito-->
+                        <p>Carrito</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#" onclick="openAccountPages(); return false;">
+                        <img src="img/IconoConfCuenta.png" alt="Icono Cuenta"> <!--Icono Cuenta-->
+                        <p>Cuenta</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div id="opcionesCuenta" class="oculto">
+            <div>
+                <button class="opcionCuenta" onclick="location.href='./Pedidos.html'">Pedidos</button>
+                <button class="opcionCuenta" onclick="location.href='./Guardados.html'">Guardados</button>
+            </div>
+            <button class="cerrarSesion" onclick="location.href='./index.html'">Cerrar Sesión</button>
+        </div>
+
+        <h1>iPhone 15 Pro</h1>
+        <main>
+            <div id="mainDiv">
+                <div id="opcionesIzquierda">
+                    <div id="guardarEnGuardados">
+                        <h3>Guardar en lista</h3>
+                        <img src="img/IconoGuardar.png" alt="">
+                    </div>
+
+                    <div id="caracteristicasPrincipales">
+                        <div>
+                            <h3>Tipo de Conexión:</h3>
+                            <div id="botonesConexion">
+                                <button disabled><img src="img/Icono4G.png" alt=""></button>
+                                <button><img src="img/Icono5G.png" alt=""></button>
+                            </div>
+                            
+                            <h3>Almacenamiento:</h3>
+                            <div id="botonesAlmac">
+                                <div>
+                                    <button><p>128GB</p></button>
+                                    <button><p>256GB</p></button>
+                                </div>
+                                <div>
+                                    <button><p>512GB</p></button>
+                                    <button><p>1TB</p></button>
+                                </div>
+                            </div>
+
+                            <h3>Memoria RAM:</h3>
+                            <h3>8GB</h3>
+                        </div>
+
+                        <div id="botonesColores">
+                            <h3>Colores:</h3>
+                            <button id="color1"><div></div></button>
+                            <button id="color2"><div></div></button>
+                            <button id="color3"><div></div></button>
+                            <button id="color4"><div></div></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="imagenesProducto">
+                    <img src="img/dispositivos/iPhone15Pro.png" alt="" class="imagenGrande">
+                    <div id="imagenesPequenas">
+                        <div><img src="img/dispositivos/iPhone15Pro.png" alt=""></div>
+                        <div><img src="img/dispositivos/iPhone15Pro2.png" alt=""></div>
+                        <div><img src="img/dispositivos/iPhone15Pro3.png" alt=""></div>
+                        <div><img src="img/dispositivos/iPhone15Pro4.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div id="precios">
+                    <div id="precioCompra">
+                        <h6>1219€</h6>
+                        <div>
+                            <p>Fecha de entrega:</p>
+                            <p>mañana</p>
+                        </div>
+                        <button><p>Comprar</p></button>
+                    </div>
+
+                    <hr>
+
+                    <div id="precioCompraMeses">
+                        <div>
+                            <h6>1422€</h6>
+                            <label>204€ x 5 meses + 16,62%</label>
+                        </div>
+                        <div>
+                            <p>Fecha de entrega:</p>
+                            <p>mañana</p>
+                        </div>
+                        <button><p>Comprar</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <section id="especificacionesConcretas">
+                <h2>Especificaciones más concretas:</h2>
+                <dl>
+                    <dt>Almacenamiento:</dt>
+                    <dd>128GB/256GB/512GB/1TB</dd>
+
+                    <dt>Memoria RAM:</dt>
+                    <dd>8GB</dd>
+
+                    <dt>Sistema Operativo:</dt>
+                    <dd>IOS 17</dd>
+
+                    <dt>Chip (Procesador):</dt>
+                    <dd>Chip A17 Pro</dd>
+                    <dd>Nueva CPU de 6 núcleos (2 de rendimiento y 4 de eficiencia)</dd>
+                    <dd>Nueva GPU de 6 núcleos</dd>
+                    <dd>Nuevo Neural Engine de 16 núcleos</dd>
+
+                    <dt>Cámara:</dt>
+                    <dd>Principal de 48 Mpx: 24 mm, apertura de ƒ/1,78, estabili­zación óptica de imagen por desplazamiento del sensor de segunda generación, 100 % Focus Pixels y compati­bilidad con fotos de superalta resolución (24 y 48 Mpx)</dd> <br>
+                    <dd>Ultra gran angular de 12 Mpx: 13 mm, apertura de ƒ/2,2 y campo de visión de 120° y 100 % Focus Pixels</dd>
+                    <dd>Teleobjetivo x2 de 12 Mpx (gracias al sensor Quad Pixel): 48 mm, apertura de ƒ/1,78, estabili­zación óptica de imagen por desplazamiento del sensor de segunda generación y 100 % Focus Pixels...</dd>
+                </dl>
+                <a href="#" class="verMas">Ver más</a>
+            </section>
+
+            <section id="acercaDelProducto">
+                <h2>Acerca de este producto:</h2>
+                <ul>
+                    <li>FORJADO EN TITANIO — El iPhone 15 Pro tiene un diseño de titanio robusto y ligero de calidad aeroespacial con parte trasera de vidrio mate texturizado. La parte delantera con Ceramic Shield es más resistente que cualquier vidrio de smartphone. Y no se inmuta con las salpicaduras, el agua ni el polvo.</li>
+                    <br><li>A17 PRO — La GPU tiene una potencia sideral para que disfrutes de los juegos móviles más avanzados, con entornos ultradetallados y personajes más realistas. Además, el A17 Pro es tan eficiente que te da autonomía para un día entero.</li>
+                    <br><li>SISTEMA DE CÁMARAS PRO — Los siete objetivos profesionales te dan una flexibilidad de encuadre asombrosa. Haz fotos en altísima resolución con más color y detalle gracias a la cámara principal de 48 Mpx. Y consigue unos primeros planos supernítidos desde más lejos con el teleobjetivo x3 del iPhone 15 Pro...</li>
+                </ul>
+                <a href="#" class="verMas">Ver más</a>
+            </section>
+
+            <hr>
+
+            <div id="valoraciones">
+                <h3>Estrellas según los usuarios</h3>
+                <div id="estrellas">
+                    <h4>1: ---%</h4>
+                    <h4>2: ---%</h4>
+                    <h4>3: ---%</h4>
+                    <h4>4: ---%</h4>
+                    <h4>5: ---%</h4>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <img src="img/IconoIGBlanco.png" alt="Logo IG"></img>
+            <img src="img/IconoFBBlanco.png" alt="Logo FB"></img>
+            <img src="img/IconoTwitterBlanco.png" alt="Logo X (Twitter)"></img>
+        </footer>
+    </body>
+</html>

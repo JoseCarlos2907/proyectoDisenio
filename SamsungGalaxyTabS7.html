@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Producto</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="style/CabeceraYPie.css">
+        <link rel="stylesheet" href="style/Producto.css">
+        <script src="Funciones.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="divLogo">
+                <a href="index.html"><img id="imgLogo" src="img/SkyPhonesLogo.png" alt="Logo SkyPhones"> <!--Logo--></a>
+            </div>
+
+            <div id="opcionesMenu">
+                <a href="Dispositivos.html">
+                    <div>
+                        <p>Dispositivos</p>
+                    </div>
+                </a>
+                
+                <a href="Accesorios.html">
+                    <div>
+                        <p>Accesorios</p>
+                    </div>
+                </a>
+
+                <a href="Reparaciones.html">
+                    <div>
+                        <p>Reparaciones</p>
+                    </div>
+                </a>
+
+                <a href="Soporte.html">
+                    <div>
+                        <p>Soporte</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div id="barraBusqueda">
+                <div>
+                    <input type="text" placeholder="Búsqueda">
+                    <img src="img/IconoLupa.png" alt="Icono Lupa"> <!--Icono Lupa-->
+                </div>
+            </div>
+
+
+            <div id="opcionesNaranjas">
+                <div>
+                    <a href="Carrito.html">
+                        <img src="img/IconoCarrito36px.png" alt="Icono Carrito"> <!--Icono Carrito-->
+                        <p>Carrito</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#" onclick="openAccountPages(); return false;">
+                        <img src="img/IconoConfCuenta.png" alt="Icono Cuenta"> <!--Icono Cuenta-->
+                        <p>Cuenta</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div id="opcionesCuenta" class="oculto">
+            <div>
+                <button class="opcionCuenta" onclick="location.href='./Pedidos.html'">Pedidos</button>
+                <button class="opcionCuenta" onclick="location.href='./Guardados.html'">Guardados</button>
+            </div>
+            <button class="cerrarSesion" onclick="location.href='./index.html'">Cerrar Sesión</button>
+        </div>
+
+        <h1>Samsung Galaxy Tab S7</h1>
+        <main>
+            <div id="mainDiv">
+                <div id="opcionesIzquierda">
+                    <div id="guardarEnGuardados">
+                        <h3>Guardar en lista</h3>
+                        <img src="img/IconoGuardar.png" alt="">
+                    </div>
+
+                    <div id="caracteristicasPrincipales">
+                        <div>
+                            <h3>Tipo de Conexión:</h3>
+                            <div id="botonesConexion">
+                                <button><img src="img/Icono4G.png" alt=""></button>
+                                <button><img src="img/Icono5G.png" alt=""></button>
+                            </div>
+                            
+                            <h3>Almacenamiento:</h3>
+                            <div id="botonesAlmac">
+                                <div>
+                                    <button><p>128GB</p></button>
+                                    <button><p>256GB</p></button>
+                                </div>
+                                <div>
+                                    <button><p>512GB</p></button>
+                                </div>
+                            </div>
+
+                            <h3>Memoria RAM:</h3>
+                            <div id="botonesRAM">
+                                <div>
+                                    <button><p>6GB</p></button>
+                                    <button><p>8GB</p></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="botonesColores">
+                            <h3>Colores:</h3>
+                            <button id="color10"><div></div></button>
+                            <button id="color11"><div></div></button>
+                            <button id="color12"><div></div></button>
+                            <button id="color13"><div></div></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="imagenesProducto">
+                    <img src="img/dispositivos/SamsungGalaxyTabS7.png" alt="" class="imagenGrande">
+                    <div id="imagenesPequenas">
+                        <div><img src="img/dispositivos/SamsungGalaxyTabS7.png" alt=""></div>
+                        <div><img src="img/dispositivos/SGTS7_2.png" alt=""></div>
+                        <div><img src="img/dispositivos/SGTS7_3.png" alt=""></div>
+                        <div><img src="img/dispositivos/SGTS7_4.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div id="precios">
+                    <div id="precioCompra">
+                        <h6>549€</h6>
+                        <div>
+                            <p>Fecha de entrega:</p>
+                            <p>mañana</p>
+                        </div>
+                        <button><p>Comprar</p></button>
+                    </div>
+
+                    <hr>
+
+                    <div id="precioCompraMeses">
+                        <div>
+                            <h6>640€</h6>
+                            <label>110€ x 5 meses + 16,62%</label>
+                        </div>
+                        <div>
+                            <p>Fecha de entrega:</p>
+                            <p>mañana</p>
+                        </div>
+                        <button><p>Comprar</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <section id="especificacionesConcretas">
+                <h2>Especificaciones más concretas:</h2>
+                <dl>
+                    <dt>Almacenamiento:</dt>
+                    <dd>128GB/256GB/512GB</dd>
+
+                    <dt>Memoria RAM:</dt>
+                    <dd>6GB/8GB</dd>
+
+                    <dt>Sistema Operativo:</dt>
+                    <dd>Android 10</dd>
+
+                    <dt>Resolucion de pantalla:</dt>
+                    <dd>2560 x 1600 Píxeles</dd>
+
+                    <dt>Tamaño de la pantalla:</dt>
+                    <dd>11 pulgadas</dd>
+                </dl>
+            </section>
+
+            <section id="acercaDelProducto">
+                <h2>Acerca de este producto:</h2>
+                <ul>
+                    <li>Pantalla táctil QHD de 11" con resolución de 2560 x 1600 píxeles, 120Hz</li>
+                    <li>Procesador Qualcomm Snapdragon 865+</li>
+                    <li>Memoria RAM de 6GB, Almacenamiento de 128GB con ranura microsd ampliable</li>
+                    <li>Cámara trasera de 13MP y delantera de 8MP, sonido Atmos y altavoz cuádruple AKG</li>
+                    <li>Batería de 8000 mAh con carga rápida de 45W y sistema operativo Android 10 actualizable</li>
+                    <li>La tablet está equipada con un S Pen rediseñado de latencia ultra baja para ayudarte a hacerlo todo</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <div id="valoraciones">
+                <h3>Estrellas según los usuarios</h3>
+                <div id="estrellas">
+                    <h4>1: ---%</h4>
+                    <h4>2: ---%</h4>
+                    <h4>3: ---%</h4>
+                    <h4>4: ---%</h4>
+                    <h4>5: ---%</h4>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <img src="img/IconoIGBlanco.png" alt="Logo IG"></img>
+            <img src="img/IconoFBBlanco.png" alt="Logo FB"></img>
+            <img src="img/IconoTwitterBlanco.png" alt="Logo X (Twitter)"></img>
+        </footer>
+    </body>
+</html>

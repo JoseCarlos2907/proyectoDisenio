@@ -1,0 +1,342 @@
+h1{
+    text-align: center;
+    font-size: 48.8px;
+    color: #485862;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#productosCarrito{
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#productosCarrito hr{
+    width: 80%;
+    align-self: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.productoIndividual{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.caracteristicasProducto{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.caracteristicasProducto div{
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    height: 70%;
+    width: 15%;
+    border: 0;
+    border-bottom: 2px solid #485862;
+    margin: 0;
+}
+
+
+p{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.productoIndividual div:last-of-type{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-self: end;
+}
+
+h4{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+h6{
+    font-size: 20px;
+    font-weight: bold;
+    height: fit-content;
+}
+
+#opcionesCarrito{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#opcionesCarrito a{
+    align-self: end;
+}
+
+#opcionesCarrito h2{
+    align-self: center;
+    margin-top: 15%;
+}
+
+#opcionesCarrito button{
+    width: 55%;
+    height: 5%;
+    margin-top: 17%;
+    border-radius: 15px;
+    border: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#opcionesCarrito button:first-of-type{
+    background-color: #F48181;
+}
+
+#opcionesCarrito button:last-of-type{
+    background-color: #FFB649;
+}
+
+#opcionesCarrito a:first-of-type{
+    color: #0082CC;
+    font-weight: 700;
+}
+
+hr{
+    border-width: 2px;
+}
+
+footer{
+    margin-top: 10%;
+}
+
+@media (max-width: 1475px) {
+    h1{
+        font-size: 38px;
+    }
+
+    p, input[type=number]{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size: 27px;
+    }
+    
+    h5{
+        font-size: 27px;
+    }
+    
+    h6{
+        font-size: 16px;
+    }
+
+    #opcionesCarrito button{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1{
+        font-size: 38px;
+    }
+
+    p, input[type=number]{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size: 27px;
+    }
+    
+    h5{
+        font-size: 27px;
+    }
+    
+    h6{
+        font-size: 16px;
+    }
+
+    #opcionesCarrito button{
+        font-size: 16px;
+    }
+
+    .productoIndividual img{
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 1075px) {
+    h1{
+        font-size: 34px;
+    }
+
+    p, input[type=number]{
+        font-size: 12px;
+    }
+
+    h4{
+        font-size: 23px;
+    }
+    
+    h5{
+        font-size: 23px;
+    }
+    
+    h6{
+        font-size: 12px;
+    }
+
+    #opcionesCarrito button{
+        font-size: 12px;
+    }
+
+    #opcionesCarrito h2, #opcionesCarrito > a{
+        font-size: 16px;
+    }
+
+    .productoIndividual img{
+        width: 100px;
+    }
+
+    main{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+@media (max-width: 850px) {
+    h1{
+        font-size: 30px;
+    }
+
+    p, input[type=number]{
+        font-size: 8px;
+    }
+
+    h4{
+        font-size: 19px;
+    }
+    
+    h5{
+        font-size: 19px;
+    }
+    
+    h6{
+        font-size: 8px;
+    }
+
+    #opcionesCarrito button{
+        font-size: 8px;
+    }
+
+    #opcionesCarrito h2, #opcionesCarrito > a{
+        font-size: 12px;
+    }
+
+    .productoIndividual img{
+        width: 80px;
+    }
+}
+
+@media (max-width: 680px) {
+    h1{
+        font-size: 28px;
+    }
+
+    p, input[type=number]{
+        font-size: 6px;
+    }
+
+    h4{
+        font-size: 17px;
+    }
+    
+    h5{
+        font-size: 17px;
+    }
+    
+    h6{
+        font-size: 6px;
+    }
+
+    #opcionesCarrito button{
+        font-size: 6px;
+    }
+
+    #opcionesCarrito h2, #opcionesCarrito > a{
+        font-size: 10px;
+    }
+
+    .productoIndividual img{
+        width: 60px;
+    }
+
+    main{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+
+@media (max-width: 470px) {
+    h1{
+        font-size: 26px;
+    }
+
+    p, input[type=number]{
+        font-size: 4px;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+    
+    h5{
+        font-size: 15px;
+    }
+    
+    h6{
+        font-size: 4px;
+    }
+
+    #opcionesCarrito button{
+        font-size: 4px;
+    }
+
+    #opcionesCarrito h2, #opcionesCarrito > a{
+        font-size: 8px;
+    }
+
+    .productoIndividual img{
+        width: 60px;
+    }
+
+    main{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}

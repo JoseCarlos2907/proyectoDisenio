@@ -1,0 +1,309 @@
+h1{
+    text-align: center;
+    font-size: 48.8px;
+    color: #485862;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+main{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#divMain{
+    background-color: #E4E9EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    background-color: #FFFFFF;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 20px;
+}
+
+.productoIndividual{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#caracteristicasEImagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.caracteristicasProducto{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.caracteristicasProducto div{
+    display: flex;
+    flex-direction: row;
+}
+
+#fechaEntrega{
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+}
+
+#estadoPedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#estado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#descargarFactura{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#descargarFactura img{
+    height: 24px;
+    width: 24px;
+}
+
+#textoDescargarFactura{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 31px;
+    font-weight: 900;
+}
+
+.pedidoEntregado{
+    color: #2AD23B;
+}
+
+
+.pedidoEnCamino{
+    color: #FF9900;
+}
+
+.pedidoConRetraso{
+    color: #B21010;
+}
+
+p{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+h6{
+    font-size: 20px;
+    font-weight: bold;
+    height: fit-content;
+    align-self: center;
+}
+
+hr{
+    border-width: 2px;
+}
+
+footer{
+    margin-top: 10%;
+}
+
+
+@media (max-width: 1175px) {
+    h1{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    
+    h2{
+        font-size: 27px;
+    }
+    
+    h3{
+        font-size: 29px;
+    }
+
+    h4{
+        font-size: 27px;
+    }
+    
+    h5{
+        font-size: 27px;
+    }
+    
+    h6{
+        font-size: 16px;
+    }
+
+    label{
+        font-size: 27px;
+    }
+
+    #caracteristicasEImagen img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 920px) {
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+    
+    h2{
+        font-size: 23px;
+    }
+    
+    h3{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 23px;
+    }
+    
+    h5{
+        font-size: 23px;
+    }
+    
+    h6{
+        font-size: 12px;
+    }
+
+    label{
+        font-size: 23px;
+    }
+
+    #caracteristicasEImagen img{
+        width: 100px;
+    }
+
+    #descargarFactura img{
+        height: 24px;
+        width: 24px;
+    }
+
+    #estado img{
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media (max-width: 780px) {
+    h1{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 5px;
+    }
+    
+    h2{
+        font-size: 14px;
+    }
+    
+    h3{
+        font-size: 12px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+    
+    h5{
+        font-size: 14px;
+    }
+    
+    h6{
+        font-size: 5px;
+    }
+
+    label{
+        font-size: 14px;
+    }
+
+    #caracteristicasEImagen img{
+        width: 60px;
+    }
+
+    #descargarFactura img, #estado img{
+        height: 12px;
+        width: 12px;
+    }
+}
+
+@media (max-width: 445px) {
+    h1{
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 4px;
+    }
+    
+    h2{
+        font-size: 10px;
+    }
+    
+    h3{
+        font-size: 8px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    
+    h5{
+        font-size: 10px;
+    }
+    
+    h6{
+        font-size: 4px;
+    }
+
+    label{
+        font-size: 10px;
+    }
+
+    #caracteristicasEImagen img{
+        width: 40px;
+    }
+}

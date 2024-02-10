@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Producto</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="style/CabeceraYPie.css">
+        <link rel="stylesheet" href="style/Producto.css">
+        <script src="Funciones.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="divLogo">
+                <a href="index.html"><img id="imgLogo" src="img/SkyPhonesLogo.png" alt="Logo SkyPhones"> <!--Logo--></a>
+            </div>
+
+            <div id="opcionesMenu">
+                <a href="Dispositivos.html">
+                    <div>
+                        <p>Dispositivos</p>
+                    </div>
+                </a>
+                
+                <a href="Accesorios.html">
+                    <div>
+                        <p>Accesorios</p>
+                    </div>
+                </a>
+
+                <a href="Reparaciones.html">
+                    <div>
+                        <p>Reparaciones</p>
+                    </div>
+                </a>
+
+                <a href="Soporte.html">
+                    <div>
+                        <p>Soporte</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div id="barraBusqueda">
+                <div>
+                    <input type="text" placeholder="Búsqueda">
+                    <img src="img/IconoLupa.png" alt="Icono Lupa"> <!--Icono Lupa-->
+                </div>
+            </div>
+
+
+            <div id="opcionesNaranjas">
+                <div>
+                    <a href="Carrito.html">
+                        <img src="img/IconoCarrito36px.png" alt="Icono Carrito"> <!--Icono Carrito-->
+                        <p>Carrito</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#" onclick="openAccountPages(); return false;">
+                        <img src="img/IconoConfCuenta.png" alt="Icono Cuenta"> <!--Icono Cuenta-->
+                        <p>Cuenta</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div id="opcionesCuenta" class="oculto">
+            <div>
+                <button class="opcionCuenta" onclick="location.href='./Pedidos.html'">Pedidos</button>
+                <button class="opcionCuenta" onclick="location.href='./Guardados.html'">Guardados</button>
+            </div>
+            <button class="cerrarSesion" onclick="location.href='./index.html'">Cerrar Sesión</button>
+        </div>
+
+        <h1>HUAWEI P40 Pro 5G</h1>
+        <main>
+            <div id="mainDiv">
+                <div id="opcionesIzquierda">
+                    <div id="guardarEnGuardados">
+                        <h3>Guardar en lista</h3>
+                        <img src="img/IconoGuardar.png" alt="">
+                    </div>
+
+                    <div id="caracteristicasPrincipales">
+                        <div>
+                            <h3>Tipo de Conexión:</h3>
+                            <div id="botonesConexion">
+                                <button><img src="img/Icono4G.png" alt=""></button>
+                                <button><img src="img/Icono5G.png" alt=""></button>
+                            </div>
+                            
+                            <h3>Almacenamiento:</h3>
+                            <div id="botonesAlmac">
+                                <h3>128GB</h3>
+                            </div>
+
+                            <h3>Memoria RAM:</h3>
+                            <h3>8GB</h3>
+                        </div>
+
+                        <div id="botonesColores">
+                            <h3>Colores:</h3>
+                            <button id="color14"><div></div></button>
+                            <button id="color15"><div></div></button>
+                            <button id="color16"><div></div></button>
+                            <button disabled id="color14"><div></div></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="imagenesProducto">
+                    <img src="img/dispositivos/HUAWEIP40Pro5G.png" alt="" class="imagenGrande">
+                    <div id="imagenesPequenas">
+                        <div><img src="img/dispositivos/HUAWEIP40Pro5G.png" alt=""></div>
+                        <div><img src="img/dispositivos/HUAWEIP40Pro5G_2.png" alt=""></div>
+                        <div><img src="img/dispositivos/HUAWEIP40Pro5G_3.png" alt=""></div>
+                        <div><img src="img/dispositivos/HUAWEIP40Pro5G_4.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div id="precios">
+                    <div id="precioCompra">
+                        <h6>540€</h6>
+                        <div>
+                            <p>Fecha de entrega:</p>
+                            <p>mañana</p>
+                        </div>
+                        <button><p>Comprar</p></button>
+                    </div>
+
+                    <hr>
+
+                    <div id="precioCompraMeses">
+                        <div>
+                            <h6>630€</h6>
+                            <label>108€ x 5 meses + 16,62%</label>
+                        </div>
+                        <div>
+                            <p>Fecha de entrega:</p>
+                            <p>mañana</p>
+                        </div>
+                        <button><p>Comprar</p></button>
+                    </div>
+                </div>
+            </div>
+
+            <section id="especificacionesConcretas">
+                <h2>Especificaciones más concretas:</h2>
+                <dl>
+                    <dt>Almacenamiento:</dt>
+                    <dd>128GB</dd>
+
+                    <dt>Memoria RAM:</dt>
+                    <dd>8GB</dd>
+
+                    <dt>Tamaño de la pantalla:</dt>
+                    <dd>6.1 pulgadas</dd>
+
+                    <dt>Tipo de pantalla:</dt>
+                    <dd>OLED</dd>
+
+                    <dt>Cámara:</dt>
+                    <dd>Triple cámara Leica de 50 MP con visión nocturna (50+16+8MP)</dd>
+
+                </dl>
+            </section>
+
+            <section id="acercaDelProducto">
+                <h2>Acerca de este producto:</h2>
+                <ul>
+                    <li>Cámara cuádruple Leica Ultra Vision: sensor Ultra Vision de 50 MP, cámara de cine ultra ancha de 40 MP, cámaras teleobjetivo de 12 MP, cámara de detección de profundidad 3</li>
+                    <li>Cámara principal: cámara Ultra Vision de 50 MP, sensor de ultra visión de 1 / 1.28 pulgadas, matriz de filtro de color RYYB, enfoque automático Octa PD, capta luz y detalles con mayor claridad</li>
+                    <li>Cámara teleobjetivo de 12 MP: zoom óptico de 5x, zoom híbrido de 10x, zoom máximo de 50xa</li>
+                    <li>Wi-Fi 6 Plus: Al utilizar la tecnología Dynamic Narrow Bandwidth, la conexión mediante Wi-Fi 6 Plus tiene un alcance mayor. Admite un ancho de banda de 160 MHz, con una velocidad óptima que alcanza hasta 2.4 Gbps. Este smartphone incorpora Android 10 AOSP y Huawei Mobile Services (HMS). Google Mobile Services no está preinstalado...</li>
+                </ul>
+                <a href="#" class="verMas">Ver más</a>
+            </section>
+
+            <hr>
+
+            <div id="valoraciones">
+                <h3>Estrellas según los usuarios</h3>
+                <div id="estrellas">
+                    <h4>1: ---%</h4>
+                    <h4>2: ---%</h4>
+                    <h4>3: ---%</h4>
+                    <h4>4: ---%</h4>
+                    <h4>5: ---%</h4>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <img src="img/IconoIGBlanco.png" alt="Logo IG"></img>
+            <img src="img/IconoFBBlanco.png" alt="Logo FB"></img>
+            <img src="img/IconoTwitterBlanco.png" alt="Logo X (Twitter)"></img>
+        </footer>
+    </body>
+</html>

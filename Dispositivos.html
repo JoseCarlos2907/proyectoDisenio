@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dispositivos</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="style/CabeceraYPie.css">
+        <link rel="stylesheet" href="style/DispositivosYAccesorios.css">
+        <script src="Funciones.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="divLogo">
+                <a href="index.html"><img id="imgLogo" src="img/SkyPhonesLogo.png" alt="Logo SkyPhones"> <!--Logo--></a>
+            </div>
+
+            <div id="opcionesMenu">
+                <a href="Dispositivos.html">
+                    <div>
+                        <p>Dispositivos</p>
+                    </div>
+                </a>
+                
+                <a href="Accesorios.html">
+                    <div>
+                        <p>Accesorios</p>
+                    </div>
+                </a>
+
+                <a href="Reparaciones.html">
+                    <div>
+                        <p>Reparaciones</p>
+                    </div>
+                </a>
+
+                <a href="Soporte.html">
+                    <div>
+                        <p>Soporte</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div id="barraBusqueda">
+                <div>
+                    <input type="text" placeholder="Búsqueda">
+                    <img src="img/IconoLupa.png" alt="Icono Lupa"> <!--Icono Lupa-->
+                </div>
+            </div>
+
+
+            <div id="opcionesNaranjas">
+                <div>
+                    <a href="Carrito.html">
+                        <img src="img/IconoCarrito36px.png" alt="Icono Carrito"> <!--Icono Carrito-->
+                        <p>Carrito</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#" onclick="openAccountPages(); return false;">
+                        <img src="img/IconoConfCuenta.png" alt="Icono Cuenta"> <!--Icono Cuenta-->
+                        <p>Cuenta</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div id="opcionesCuenta" class="oculto">
+            <div>
+                <button class="opcionCuenta" onclick="location.href='./Pedidos.html'">Pedidos</button>
+                <button class="opcionCuenta" onclick="location.href='./Guardados.html'">Guardados</button>
+            </div>
+            <button class="cerrarSesion" onclick="location.href='./index.html'">Cerrar Sesión</button>
+        </div>
+
+        <main>
+            <div id="tituloYPrecios">
+                <h1>Dispositivos</h1>
+                <div>
+                    <p>Precio:</p>
+                    <p id="minP">Mín.</p>
+                    <input type="number">
+                    <p>Máx.</p>
+                    <input type="number">
+                </div>
+            </div>
+            <div>
+                <div id="filtros">
+                    <h3>Almacenamiento</h3>
+                    <input type="checkbox">
+                    <label>32GB</label><br>
+                    <input type="checkbox">
+                    <label>64GB</label><br>
+                    <input type="checkbox">
+                    <label>128GB</label><br>
+                    <input type="checkbox">
+                    <label>256GB</label><br>
+                    <input type="checkbox">
+                    <label>512GB</label><br>
+                    <input type="checkbox">
+                    <label>1TB</label>
+
+                    <hr>
+
+                    <h3>Memoria RAM</h3>
+                    <input type="checkbox">
+                    <label>2GB</label><br>
+                    <input type="checkbox">
+                    <label>4GB</label><br>
+                    <input type="checkbox">
+                    <label>6GB</label><br>
+                    <input type="checkbox">
+                    <label>8GB</label><br>
+                    <input type="checkbox">
+                    <label>12GB</label><br>
+                    <input type="checkbox">
+                    <label>16GB</label>
+
+                    <hr>
+
+                    <h3>Sistema Operativo</h3>
+                    <input type="checkbox">
+                    <label>Android</label><br>
+                    <input type="checkbox">
+                    <label>IOS</label>
+
+                    <hr>
+
+                    <h3>Cámara</h3>
+                    <input type="checkbox">
+                    <label>12MP</label><br>
+                    <input type="checkbox">
+                    <label>24MP</label><br>
+                    <input type="checkbox">
+                    <label>36MP</label><br>
+                    <input type="checkbox">
+                    <label>48MP</label><br>
+                    <input type="checkbox">
+                    <label>50MP</label><br>
+                </div>
+                <div id="productos">
+                    <div>
+                        <a href="iPhone15Pro.html">
+                            <img src="img/dispositivos/iPhone15Pro.png" alt="" class="imagenesProductos">
+                        </a>
+                        <h4>iPhone 15 Pro</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>1219€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="iPadPro2022.html">
+                            <img src="img/dispositivos/iPadPro2022.png" alt="" class="imagenesProductos">   
+                        </a>
+                        <h4>iPad Pro 2022</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>862€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="GooglePixel6.html">
+                            <img src="img/dispositivos/GooglePixel6.png" alt="" class="imagenesProductos">  
+                        </a>
+                        <h4>Google Pixel 6</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>298€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="SamsungGalaxyTabS7.html">
+                            <img src="img/dispositivos/GalaxyTabS7 (2).png" alt="" class="imagenesProductos">    
+                        </a>
+                        <h4>Samsung Galaxy Tab S7</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>549€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="HUAWEIP40Pro5G.html">
+                            <img src="img/dispositivos/HUAWEIP40Pro5G.png" alt="" class="imagenesProductos">    
+                        </a>
+                        <h4>HUAWEI P40 Pro 5G</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>540€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                            <img src="img/dispositivos/XiaomiREDMINOTE12.jpg" alt="" class="imagenesProductos"> 
+                        </a>
+                        <h4>Xiaomi REDMI NOTE 12</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>139€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/BlackviewA200Pro.jpg" alt="" class="imagenesProductos">  
+                        </a>
+                        <h4>Blackview A200 Pro</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>299€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/HUAWEInova9SE.jpg" alt="" class="imagenesProductos"> 
+                        </a>
+                        <h4>HUAWEI nova 9 SE</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>189€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/DOOGEES110.jpg" alt="" class="imagenesProductos">    
+                        </a>
+                        <h4>DOOGEE S110</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>299,99€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/RealmeC554G.jpg" alt="" class="imagenesProductos">   
+                        </a>
+                        <h4>Realme C55 4G</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>219€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/GooglePixel8Pro.jpg" alt="" class="imagenesProductos">   
+                        </a>
+                        <h4>Google Pixel 8 Pro</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>1099€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/XiaomiRedmiNote12Pro.jpg" alt="" class="imagenesProductos">  
+                        </a>
+                        <h4>Xiaomi Redmi Note 12 Pro</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>279€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/TCL40NXTPAPER4G.jpg" alt="" class="imagenesProductos">   
+                        </a>
+                        <h4>TCL 40  NXTPAPER 4G</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>165€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/OPPOA78.jpg" alt="" class="imagenesProductos">   
+                        </a>
+                        <h4>OPPO A78</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>549€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/GalaxyUltraS24 (2).png" alt="" class="imagenesProductos"> 
+                        </a>
+                        <h4>SAMSUNG Galaxy S24 Ultra</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>1459€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/SamsungGalaxyA535G.jpg" alt="" class="imagenesProductos">    
+                        </a>
+                        <h4>Samsung Galaxy A53 5G</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>449€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/SamsungGalaxyA335G.jpg" alt="" class="imagenesProductos">    
+                        </a>
+                        <h4>Samsung Galaxy A33 5G</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>232€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/LenovoTabM10 (2).png" alt="" class="imagenesProductos">  
+                        </a>
+                        <h4>Lenovo Tab M10 (3rd Gen)</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>179€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/NothingPhone(2).jpg" alt="" class="imagenesProductos">   
+                        </a>
+                        <h4>Nothing Phone (2)</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>699€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/BlackViewTab70 (2).png" alt="" class="imagenesProductos">  
+                        </a>
+                        <h4>Blackview Tablet Tab70</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>199€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/XiaomiPad6.jpg" alt="" class="imagenesProductos">    
+                        </a>
+                        <h4>Xiaomi Pad 6</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>346€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/MatePadT10s (2).png" alt="" class="imagenesProductos"> 
+                        </a>
+                        <h4>HUAWEI MatePad T10s</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>195€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/XiaomiPocoC65.jpg" alt="" class="imagenesProductos"> 
+                        </a>
+                        <h4>Xiaomi Poco C65</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>169€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/MotorolaMotoG14.jpg" alt="" class="imagenesProductos">   
+                        </a>
+                        <h4>Motorola moto g14</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>149€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="Error404.html">
+                        <img src="img/dispositivos/NokiaC21Plus4G.jpg" alt="" class="imagenesProductos">    
+                        </a>
+                        <h4>Nokia C21 Plus 4G</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>107€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cantidadPaginas">
+                <button>&lt;</button>
+                <p>1 de 20</p>
+                <button>&gt;</button>
+            </div>
+        </main>
+
+        <footer>
+            <img src="img/IconoIGBlanco.png" alt="Logo IG"></img>
+            <img src="img/IconoFBBlanco.png" alt="Logo FB"></img>
+            <img src="img/IconoTwitterBlanco.png" alt="Logo X (Twitter)"></img>
+        </footer>
+    </body>
+</html>

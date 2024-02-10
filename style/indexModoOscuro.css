@@ -1,0 +1,330 @@
+body{
+    background-color: #004166;
+    color: white;
+}
+
+#bannerBienvenida img{
+    width: 100%;
+}
+
+.anadirCarrito{
+    background-color: #FF9900;
+    width: 55%;
+    border: 0;
+}
+
+#masPopulares{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 7%;
+    margin-top: 3%;
+}
+
+#tituloYEnlaceMasPopulares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+.enlace{
+    color: #60C5FF;
+    font-weight: 900;
+}
+#tituloYEnlaceMasPopulares h2{
+    font-size: 16px;
+}
+
+#productosMasPopulares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#productosMasPopulares > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    text-align: center;
+    width: 180px;
+}
+
+.imagenesProductosMasPopulares{
+    width: 170px;
+}
+
+#productosMasPopulares * h4{
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+#productosMasPopulares * p{
+    font-weight: bold;
+}
+
+.divPrecioYAnadirACarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#masVendidos{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/BannerNubesAzules.png");
+    color: white;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+
+#masVendidos h2{
+    font-size: 16px;
+}
+
+#masVendidos * h3{
+    font-size: 31.3px;
+}
+
+#masVendidos * pre{
+    font-size: 20px;
+}
+
+#masVendidos * img{
+    margin-left: 2%;
+}
+
+#productoMasVendidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+#productoMasVendidos > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tablaComparador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+
+#tablaComparador h2{
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+
+#tablaComparador table td, #tablaComparador table th{
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+#tablaComparador table th{
+    padding-bottom: 20px;
+}
+
+#tablaComparador table{
+    border-collapse: collapse;
+    margin-bottom: 4%;
+}
+
+@media (max-width: 1000px) {
+    #tituloYEnlaceMasPopulares h2{
+        font-size: 12px;
+    }
+
+    .imagenesProductosMasPopulares{
+        width: 110px;
+    }
+
+    #productosMasPopulares > div{
+        width: 120px;
+    }
+
+    #masVendidos h2{
+        font-size: 12px;
+    }
+    
+    #masVendidos * h3{
+        font-size: 24px;
+    }
+    
+    #masVendidos * p{
+        font-size: 16px;
+    }
+    
+    #masVendidos * img{
+        margin-left: 2%;
+        width: 100px;
+    }
+    
+    #productoMasVendidos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 250px;
+    }
+
+    #tablaComparador table th{
+        font-size: 12px;
+    }
+
+    #tablaComparador table td{
+        font-size: 12px;
+    }
+
+    #tablaComparador h2{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 685px) {
+    #tituloYEnlaceMasPopulares h2{
+        font-size: 8px;
+    }
+
+    .imagenesProductosMasPopulares{
+        width: 90px;
+    }
+
+    #productosMasPopulares > div{
+        width: 100px;
+    }
+
+    #masVendidos h2{
+        font-size: 8px;
+    }
+    
+    #masVendidos * h3{
+        font-size: 20px;
+    }
+    
+    #masVendidos * p{
+        font-size: 12px;
+    }
+    
+    #masVendidos * img{
+        margin-left: 1%;
+        width: 70px;
+    }
+    
+    #productoMasVendidos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 230px;
+    }
+
+    #tablaComparador table th{
+        font-size: 8px;
+    }
+
+    #tablaComparador table td{
+        font-size: 8px;
+    }
+
+    #tablaComparador h2{
+        font-size: 8px;
+    }
+
+    .enlace{
+        font-size: 12px;
+    }
+
+    .anadirCarrito img{
+        width: 12px;
+        height: 12px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    #productosMasPopulares * p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 565px) {
+    #tituloYEnlaceMasPopulares h2{
+        font-size: 4px;
+    }
+
+    .imagenesProductosMasPopulares{
+        width: 70px;
+    }
+
+    #productosMasPopulares > div{
+        width: 80px;
+    }
+
+    #masVendidos h2{
+        font-size: 4px;
+    }
+    
+    #masVendidos * h3{
+        font-size: 16px;
+    }
+    
+    #masVendidos * p{
+        font-size: 8px;
+    }
+    
+    #masVendidos * img{
+        margin-left: 1%;
+        width: 50px;
+    }
+    
+    #productoMasVendidos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 210px;
+    }
+
+    #tablaComparador table th{
+        font-size: 4px;
+    }
+
+    #tablaComparador table td{
+        font-size: 4px;
+    }
+
+    #tablaComparador h2{
+        font-size: 4px;
+    }
+
+    .enlace{
+        font-size: 8px;
+    }
+
+    .anadirCarrito img{
+        width: 12px;
+        height: 12px;
+    }
+
+    h4{
+        font-size: 8px;
+    }
+
+    #productosMasPopulares * p{
+        font-size: 6px;
+    }
+
+    #tablaComparador * img{
+        width: 30px;
+    }
+}

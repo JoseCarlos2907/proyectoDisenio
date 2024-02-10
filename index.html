@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SkyPhones Home</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link id="cssCabecera" rel="stylesheet" href="style/CabeceraYPie.css">
+        <link id="cssMain" rel="stylesheet" href="style/index.css">
+        <script src="Funciones.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="divLogo">
+                <a href="index.html"><img id="imgLogo" src="img/SkyPhonesLogo.png" alt="Logo SkyPhones"> <!--Logo--></a>
+            </div>
+
+            <div id="opcionesMenu">
+                <a href="Dispositivos.html">
+                    <div>
+                        <p>Dispositivos</p>
+                    </div>
+                </a>
+                
+                <a href="Accesorios.html">
+                    <div>
+                        <p>Accesorios</p>
+                    </div>
+                </a>
+
+                <a href="Reparaciones.html">
+                    <div>
+                        <p>Reparaciones</p>
+                    </div>
+                </a>
+
+                <a href="Soporte.html">
+                    <div>
+                        <p>Soporte</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div id="barraBusqueda">
+                <div>
+                    <a href="#" onclick="return changePaletteTheme(); return false;">
+                        <img src="img/luna.png" alt="" id="iconoLuna">
+                    </a>
+                    <input type="text" placeholder="Búsqueda">
+                    <img src="img/IconoLupa.png" alt="Icono Lupa"> <!--Icono Lupa-->
+                </div>
+            </div>
+
+
+            <div id="opcionesNaranjas">
+                <div>
+                    <a>
+                        <img src="img/IconoInicioSesion.png" alt="Icono Inicio de Sesión"> <!--Icono Inicio de Sesión-->
+                        <p>Iniciar Sesión</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="Registro.html">
+                        <img src="img/IconoRegistrarse.png" alt="Icono Registrarse"> <!--Icono Registrarse-->
+                        <p>Registro</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="bannerBienvenida">   <!--Sección Banner-->
+                <img src="img/BannerBienvenida.png" alt="Banner Bienvenida"> <!--Banner Bienvenida-->
+            </section>
+
+            <section id="masPopulares">   <!--Sección Más Populares-->
+                <div id="tituloYEnlaceMasPopulares">
+                    <h2>Productos más populares</h2>
+                    <a href="Dispositivos.html" class="enlace">Ver más...</a>
+                </div>
+                
+                <div id="productosMasPopulares">
+                    <div>
+                        <a href="Error404.html">
+                            <img src="img/productosIndexSinFondo/AnkerPowebank10000-removebg-preview.png" alt="" class="imagenesProductosMasPopulares">
+                        </a>
+                        <h4>Anker PowerBank 10000</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>23,99€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="iPadPro2022.html">
+                            <img src="img/productosIndexSinFondo/iPadPro2022-removebg-preview.png" alt="" class="imagenesProductosMasPopulares">
+                        </a>
+                        <h4>iPad Pro 2022</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>862€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="iPhone15Pro.html">
+                            <img src="img/productosIndexSinFondo/iPhone15Pro-removebg-preview.png" alt="" class="imagenesProductosMasPopulares">
+                        </a>
+                        <h4>iPhone 15 Pro</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>1219€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="GooglePixel6.html">
+                            <img src="img/productosIndexSinFondo/GooglePixel6-removebg-preview.png" alt="" class="imagenesProductosMasPopulares">
+                        </a>
+                        <h4>Google Pixel 6</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>298€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="SamsungGalaxyTabS7.html">
+                            <img src="img/productosIndexSinFondo/GalaxyTabS7__2_-removebg-preview.png" alt="" class="imagenesProductosMasPopulares">
+                        </a>
+                        <h4>Samsung Galaxy Tab S7</h4>
+                        <div class="divPrecioYAnadirACarrito">
+                            <p>549€</p>
+                            <button class="anadirCarrito"><img src="img/IconoCarrito24px.png" alt="Icono Carrito"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="masVendidos">   <!--Sección Más Vendidos-->
+                <h2>Teléfono y Tablet más vendidos</h2>
+                <div id="productoMasVendidos">
+                    <div>
+                        <div>
+                            <h3>iPhone 15 Pro</h3>
+                            <p>Memoria RAM: 8GB</p>
+                            <p>SO: IOS 17</p>
+                            <p>Procesador: A17 Bionic</p>
+                            <p>Almacenamiento: 128GB/256GB/512GB/1TB</p>
+                        </div>
+                        <img src="img/dispositivos/iPhone15ProSinFondo.png" alt="">
+                    </div>
+
+                    <div>
+                        <div>
+                            <h3>Samsung Galaxy Tab S7</h3>
+                            <p>Memoria RAM: 6GB</p>
+                            <p>SO: Android 10</p>
+                            <p>Procesador: Qualcomm Snapdragon 865+</p>
+                            <p>Almacenamiento: 128GB</p>
+                        </div>
+                        <img src="img/dispositivos/SGTS7 1.png" alt="">
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="tablaComparador">   <!--Sección Comparador de Teléfonos-->
+                <h2>Comparador de Teléfonos</h2>
+                <table>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Modelo</th>
+                        <th>RAM</th>
+                        <th>Procesador</th>
+                        <th>Cámara</th>
+                        <th>Peso</th>
+                        <th>Almacenamiento</th>
+                        <th>Tamaño</th>
+                        <th>mAh</th>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/productosIndexSinFondo/SamsungGalaxyS23VerdeTabla-removebg-preview(1).png" alt=""></td>
+                        <td><p>Samsung Galaxy</p> <p>S23 Verde</p></td>
+                        <td>8GB</td>
+                        <td rowspan="2"><p>Qualcomm Snapdragon 8,</p> <p>Gen2 Octa-Core</p></td>
+                        <td rowspan="2"><p>50MP la cámara</p> <p>con más calidad</p></td>
+                        <td>168g</td>
+                        <td>256GB</td>
+                        <td>146.3 x 70.9 (todo en mm)</td>
+                        <td>3900mAh</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/productosIndexSinFondo/HonorMagic5Pro5GTabla-removebg-preview.png" alt=""></td>
+                        <td><p>Honor Magic5</p> <p>Pro 5G</p></td>
+                        <td>12GB</td>
+
+
+                        <td>219g</td>
+                        <td>512GB</td>
+                        <td>162.9 x 76.7 (todo en mm)</td>
+                        <td>5100mAh</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/productosIndexSinFondo/iPhone15VerdeTabla-removebg-preview.png" alt=""></td>
+                        <td>iPhone 15 Verde</td>
+                        <td>6GB</td>
+                        <td>A16 con 6 núcleos</td>
+                        <td><p>48MP la cámara</p> <p>con más calidad</p></td>
+                        <td>171g</td>
+                        <td>128GB</td>
+                        <td>147.6 x 71.6 (todo en mm)</td>
+                        <td>4912mAh</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <img src="img/IconoIGBlanco.png" alt="Logo IG"></img>
+            <img src="img/IconoFBBlanco.png" alt="Logo FB"></img>
+            <img src="img/IconoTwitterBlanco.png" alt="Logo X (Twitter)"></img>
+        </footer>
+    </body>
+</html>

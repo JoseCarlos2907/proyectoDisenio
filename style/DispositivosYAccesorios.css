@@ -1,0 +1,273 @@
+main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+main > div{
+    display: flex;
+    flex-direction: row;
+}
+
+#tituloYPrecios{
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding-left: 15%;
+    justify-content: space-between;
+}
+
+#tituloYPrecios > div{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding-right: 3%;
+    font-size: 20px;
+}
+
+#tituloYPrecios input{
+    border: 0;
+    border-bottom: 3px solid #485862;
+    background-color: #E4E9EB;
+}
+
+#minP{
+    margin-left: 10%;
+}
+
+#filtros{
+    width: 37%;
+    padding-right: 1%;
+}
+
+h3{
+    font-size: 25px;
+    margin-left: 1%;
+}
+
+label{
+    font-size: 20px;
+}
+
+#filtros input{
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+#productos > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 3%;
+    text-align: center;
+    width: 180px;
+}
+
+h4{
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+}
+
+.divPrecioYAnadirACarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anadirCarrito{
+    background-color: #FF9900;
+    width: 55%;
+    border: 0;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    background-color: #FFFFFF;
+    border: 2px solid #006299;
+    height: 25px;
+    width: 25px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+input[type=checkbox]:hover {
+    appearance: none;
+    background-color: #0082CC;
+    border: 2px solid #004166;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+    background: rgb(0, 130, 204) url("../img/Check.png") no-repeat center;
+    border: 0;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked:hover {
+    background: rgb(0, 65, 102) url("../img/HoverCheck.png") no-repeat center;
+    cursor: pointer;
+}
+
+#filtros hr{
+    width: 95%;
+    justify-self: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 2px;
+    background-color: #485862;
+}
+
+.imagenesProductos{
+    height: 190px;
+}
+
+.imagenesProductosSC{
+    width: 190px;
+}
+
+#cantidadPaginas{
+    padding-left: 13%;
+    justify-content: center;
+    margin: 2%;
+}
+
+#cantidadPaginas p{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#cantidadPaginas button{
+    border: 1px solid black;
+    background-color: white;
+}
+
+#cantidadPaginas button:hover{
+    border: 1px solid #FF9900;
+    background-color: #FF9900;
+    color: white;
+    cursor: pointer;
+}
+
+#productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #E4E9EB;
+}
+
+/* Media queries */
+@media (max-width: 1475px) {
+    #tituloYPrecios{
+        padding-left: 20%;
+    }
+}
+
+@media (max-width: 1020px) {
+    #tituloYPrecios > h1{
+        font-size: 24px;
+    }
+
+    #tituloYPrecios > div{
+        padding-right: 3%;
+        font-size: 16px;
+    }
+    
+    #tituloYPrecios input{
+        width: 100px;
+    }
+    
+    #minP{
+        margin-left: 7%;
+    }
+
+    #filtros{
+        width: 20%;
+        padding-right: 1%;
+    }
+
+    #filtros > h3{
+        font-size: 20px;
+    }
+
+    .imagenesProductos{
+        height: 110px;
+    }
+
+    .imagenesProductosSC{
+        width: 120px;
+    }
+
+    #productos > div{
+        width: 130px;
+    }
+
+    @media (max-width: 650px) {
+        #tituloYPrecios > h1{
+            font-size: 12px;
+        }
+    
+        #tituloYPrecios > div{
+            padding-right: 3%;
+            font-size: 10px;
+        }
+        
+        #tituloYPrecios input{
+            width: 50px;
+        }
+        
+        #minP{
+            margin-left: 7%;
+        }
+    
+        #filtros{
+            width: 20%;
+            padding-right: 1%;
+        }
+    
+        #filtros > h3{
+            font-size: 8px;
+        }
+
+        input[type=checkbox] {
+            height: 15px;
+            width: 15px;
+        }
+    
+        .imagenesProductos{
+            height: 70px;
+        }
+    
+        .imagenesProductosSC{
+            width: 75px;
+        }
+    
+        #productos > div{
+            width: 130px;
+        }
+
+        label{
+            font-size: 6px;
+        }
+
+        h4{
+            font-size: 14px;
+        }
+
+        .divPrecioYAnadirACarrito > p{
+            font-size: 12px;
+        }
+
+        .anadirCarrito > img{
+            height: 12px;
+            width: 12px;
+        }
+    }
+}
